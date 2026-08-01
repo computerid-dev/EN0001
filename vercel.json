@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/api/admin/ban", "destination": "/api/admin/moderate?action=ban" },
+    { "source": "/api/admin/unlock", "destination": "/api/admin/moderate?action=unlock" },
+    { "source": "/api/admin/delete-account", "destination": "/api/admin/moderate?action=delete-account" }
+  ]
+}
